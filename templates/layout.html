@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>
-{% block title %}
-Stock Screener
-{% endblock title %}
-</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="{{ url_for('static', path='css/semantic.css') }}">
-<script src="{{ url_for('static', path='js/semantic.js') }}"></script>
-<script src="{{ url_for('static', path='js/jquery.js') }}"></script>
-<body>
-<div class="ui container">
-{% block content %}
-{% endblock content %}
-</div>
-</body>
+<html>
+    <head>
+        <title>Stock Screener</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+
+    <body>
+            <div class="ui container">
+        <h1>Stock Screener</h1>
+        {% block content %}
+        {% endblock content %}
+        </div>
+    </body>
 </html>
 
 
