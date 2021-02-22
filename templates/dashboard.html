@@ -6,52 +6,44 @@ Dashboard
 
 {% block content %}
 <h2>Stock Screener</h2>
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="P/E Ratio" aria-label="Username" aria-describedby="basic-addon1">
+<div class="ui input">
+  <input type="text" placeholder="P/E Ratio">
 </div>
-<div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="Dividend Yield" aria-label="Username" aria-describedby="basic-addon1">
+<div class="ui input">
+  <input type="text" placeholder="Dividend Yield">
 </div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" aria-label="Above 50 Day MA">
-    </div>
-  </div>
-  <input type="text" class="form-control" aria-label="Text input with checkbox">
+<div class="ui checkbox">
+  <input type="checkbox" name="example">
+  <label>Above 50 Day MA</label>
 </div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-    </div>
-  </div>
-  <input type="text" class="form-control" aria-label="Above 200 Day MA">
+<div class="ui checkbox">
+  <input type="checkbox" name="example">
+  <label>Above 200 Day MA</label>
 </div>
-<button type="button" class="btn btn-primary">Filter</button>
-<table class="table">
+<button class="ui button primary">
+  Filter
+</button>
+<table class="ui celled table">
   <thead>
-    <tr>
-      <th scope="col">Symbol</th>
-      <th scope="col">P/E</th>
-      <th scope="col">Dividend Yield</th>
-    </tr>
-  </thead>
+    <tr><th>Symbol</th>
+    <th>P/E</th>
+    <th>Dividend Yield</th>
+  </tr></thead>
   <tbody>
     <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td data-label="Name">James</td>
+      <td data-label="Age">24</td>
+      <td data-label="Job">Engineer</td>
     </tr>
     <tr>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td data-label="Name">Jill</td>
+      <td data-label="Age">26</td>
+      <td data-label="Job">Engineer</td>
     </tr>
     <tr>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td data-label="Name">Elyse</td>
+      <td data-label="Age">24</td>
+      <td data-label="Job">Designer</td>
     </tr>
   </tbody>
 </table>
