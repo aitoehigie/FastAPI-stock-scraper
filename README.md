@@ -11,7 +11,8 @@ pip install -r requirements.txt
 
 ## Usage
 ```bash
-source run
+sudo chmod +x run
+source ./run
 ```
 
 ## License
