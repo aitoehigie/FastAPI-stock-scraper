@@ -5,8 +5,54 @@ Dashboard
 {% endblock title %}
 
 {% block content %}
-<h1>This is a Heading</h1>
-<p>This is a paragraph</p>
-<p>This is another paragraph</p>
-<b>{{ message }}</b>
+<h2>Stock Screener</h2>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="P/E Ratio" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+<input type="text" class="form-control" placeholder="Dividend Yield" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" aria-label="Above 50 Day MA">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" aria-label="Checkbox for following text input">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Above 200 Day MA">
+</div>
+<button type="button" class="btn btn-primary">Filter</button>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">P/E</th>
+      <th scope="col">Dividend Yield</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock content %}
